@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/bege"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtinformacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="GATOS"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/ImgFoto"
+            android:layout_width="134dp"
+            android:maxWidth="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/preto" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btfoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginRight="60dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Mostrar foto gato preto"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btfoto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btfoto1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Mostrar foto gato siames"
+        android:textSize="20dp" />
+
+</RelativeLayout>
